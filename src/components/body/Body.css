@@ -67,7 +67,7 @@
 }
 
 #news .news-area{
-    padding: 20px 10%;
+    padding: 20px 9%;
 }
 
 #news .news-area h2{
@@ -77,7 +77,7 @@
 
 #news .experience {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #news .experience p {
@@ -89,3 +89,27 @@
     padding: 15px;
     border-radius: 3px;
 }
+
+/* Reference Section */
+
+#referance {
+    background-color: #fff;
+    border-bottom: 0.1px solid black;
+}
+
+#referance h2{
+    text-align: center;
+}
+
+#referance .companies {
+    padding: 0 10%;
+    display: flex;
+}
+
+/* Newsletter Section */
+#newsletter{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+

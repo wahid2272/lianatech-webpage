@@ -1,21 +1,27 @@
 import React from 'react';
-import Header2 from './components/header/Header2';
+import Header from './components/header/Header';
 import Navbar from './components/header/Navbar';
 import HeroBanner from './components/body/HeroBanner';
 import CompanyInfo from './components/body/CompanyInfo';
 import LatestNews from './components/body/LatestNews';
+import Reference from './components/body/Referance';
+import NewsLetter from './components/body/NewsLetter';
+import Footer from './components/footer/Footer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <CssBaseline/>
-      <Header2 />
-      <Navbar/>
-      <HeroBanner/>
-      <CompanyInfo/>
-      <LatestNews/>
+      <CssBaseline />
+      <Header />
+      <Navbar />
+      <HeroBanner />
+      <CompanyInfo />
+      <LatestNews />
+      <Reference />
+      <NewsLetter />
+      <Footer />
     </div>
   );
 }

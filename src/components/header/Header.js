@@ -1,44 +1,27 @@
-// import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import AppBar from '@material-ui/core/AppBar';
-// import Toolbar from '@material-ui/core/Toolbar';
-// import Typography from '@material-ui/core/Typography';
-// import Button from '@material-ui/core/Button';
-// import Box from '@material-ui/core/Box';
-// import clsx from 'clsx';
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import './Header.css';
 
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     flexGrow: 1,
-//   },
-//   menuButton: {
-//     marginRight: theme.spacing(2),
-//   },
-//   title: {
-//     flexGrow: 1,
-//   },
-//   color: {
-//     backgroundColor: "#3D8618",
-//   },
-//   height: {
-//       maxHeight: '45px',
-//       minHeight: '40px'
-//   }
-// }));
+const Header = () => {
+    return (
+        <div id="header">
+            <div className="navbar">
+            <div className="dropdown">
+                <button className="dropbtn">In English
+                <FontAwesomeIcon icon={faCaretDown} />
+                </button>
+                <div className="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+        </div> 
+      </div>
+    );
+};
 
-// export default function Header() {
-//   const classes = useStyles();
-
-//   return (
-//     <div className={classes.root}>
-//       <AppBar position="static" className= {clsx(classes.color, classes.height)}>
-//         <Toolbar>
-//           <Typography variant="h6" >
-//             News
-//           </Typography>
-//           <Button color="inherit">Login</Button>
-//         </Toolbar>
-//       </AppBar>
-//     </div>
-//   );
-// }
+export default Header;
