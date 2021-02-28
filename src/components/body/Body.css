@@ -28,13 +28,13 @@
 /* Company Section */
 
 #company {
-    height: 50vh;
+    min-height: 50vh;
 }
 
 #company .info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 10px 10%;
+    padding: 40px 8%;
 
 }
 
@@ -46,8 +46,43 @@
     align-items: center;
 }
 
+#company .img h3{
+    position: relative;
+    top: 60px;
+}
+
+#company .img .company{
+    background: url("https://source.unsplash.com/1600x900/?people") 0 0 no-repeat;
+    height: 28vh;
+    width: 48vh;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#company .img .employee{
+    background: url("https://source.unsplash.com/1600x900/?people") 0 0 no-repeat;
+    height: 28vh;
+    width: 48vh;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#company .img .contact-us{
+    background: url("https://source.unsplash.com/1600x900/?people") 0 0 no-repeat;
+    height: 28vh;
+    width: 50vh;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+} 
+
 #company .company-info {
     display: flex;
+    justify-content: space-around;
     padding: 10% 40%;
 }
 
@@ -62,12 +97,12 @@
 /* Latest News Section */
 
 #news {
-    height: 50vh;
+    height: 100%;
     background-color: rgb(228, 227, 227);
 }
 
 #news .news-area{
-    padding: 20px 9%;
+    padding: 20px 6%;
 }
 
 #news .news-area h2{
@@ -84,7 +119,7 @@
     background-color: #fff;
     margin: 20px;
     width: 300px;
-    height: 150px;
+    min-height: 150px;
     text-align: left;
     padding: 15px;
     border-radius: 3px;
@@ -94,22 +129,108 @@
 
 #referance {
     background-color: #fff;
-    border-bottom: 0.1px solid black;
+    box-shadow: 0 0 1px #333;
 }
 
 #referance h2{
     text-align: center;
 }
 
-#referance .companies {
-    padding: 0 10%;
-    display: flex;
+
+#referance .container {
+    max-width: 1200px;
+    padding: 3rem;
+    min-height: 25vh;
+    margin: 0 auto;
+    padding: 10px 8% 50px;
 }
+
+#referance .company-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+#referance .box{
+    background-color: white;
+    width: 23%;
+    border-radius: 2px;
+    box-shadow: 0 0 1px #333;
+}
+
+#referance .box .logo {
+    box-shadow: 0 0 1px #333;
+}
+
+#referance .box img {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 150px;
+}
+
+#referance .box .info{
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+
 
 /* Newsletter Section */
 #newsletter{
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px 0 50px;
+} 
+
+#newsletter input[type="email"]{
+    height: 35px;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding-left: 10px;
 }
 
+#newsletter input[type="submit"]{
+    background-color: #3D8618;
+    font-size: 14px;  
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+
+@media (max-width: 576px) {
+
+
+    /* News Section  */
+    #news {
+        height: 100%;
+    }
+
+    #news .experience{
+        flex-direction: column;
+    }
+
+    #news .experience p{
+        width: 100%;
+    }
+
+
+    /* Referance Section */
+
+    #referance .company-boxes {
+        flex-direction: column;
+    }
+
+    #referance .box {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    #referance .box img {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+}
 

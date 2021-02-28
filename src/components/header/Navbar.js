@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className="search-bar">
                 <form>
                     <input type="text" placeholder="Search" />
-                    <input type="button" value="Search" />
+                    <button>Submit</button>
                 </form>
             </div>
         </div>

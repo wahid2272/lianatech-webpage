@@ -9,11 +9,17 @@ const CompanyInfo = () => {
         <div id="company">
             <div className="info">
                 <div className="img">
-                    <p>Company</p>
-                    <p>Employee</p>
-                    <p>Contact Us</p>
+                    <div className="company">
+                        <h3>Company</h3>
+                    </div>
+                    <div className="employee">
+                        <h3>Employee</h3>
+                    </div>
+                    <div className="contact-us">
+                        <h3>Contact Us</h3>
+                    </div>
                 </div>
-                <div class="company-info">
+                <div className="company-info">
                     <div className="fa-icon">
                         <FontAwesomeIcon icon={faBriefcase} />
                     </div>
@@ -22,7 +28,7 @@ const CompanyInfo = () => {
                         <p>Clients</p>
                     </div>
                 </div>
-                <div class="company-info">
+                <div className="company-info">
                     <div className="fa-icon">
                         <FontAwesomeIcon icon={faGrin} />
                     </div>
@@ -31,7 +37,7 @@ const CompanyInfo = () => {
                         <p>Employees</p>
                     </div>
                 </div>
-                <div class="company-info">
+                <div className="company-info">
                     <div className="fa-icon">
                         <FontAwesomeIcon icon={faGlobeAfrica} />
                     </div>

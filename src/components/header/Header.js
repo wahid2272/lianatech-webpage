@@ -8,16 +8,18 @@ const Header = () => {
         <div id="header">
             <div className="navbar">
             <div className="dropdown">
-                <button className="dropbtn">In English
-                <FontAwesomeIcon icon={faCaretDown} />
+                <button>In English
+                    <span>
+                        <FontAwesomeIcon icon={faCaretDown} />
+                    </span>
                 </button>
                 <div className="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">auf Deutsch</a>
+                <a href="#">På Svenska</a>
+                <a href="#">Suomeksi</a>
                 </div>
             </div>
-            <a href="#home">Home</a>
+            <a href="#home">Intranet</a>
             <a href="#news">News</a>
         </div> 
       </div>
