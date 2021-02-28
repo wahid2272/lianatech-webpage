@@ -1,13 +1,14 @@
 #hero-banner {
     background: url("https://www.lianatech.com/media/hero-images/cache/marketing-technology-stack-991x9999,q=85.jpg") no-repeat fixed center center/cover;
     height: 50vh;
-    min-width: 100%;
+    width: 100%;
     text-align: center;
 }
 
 #hero-banner .slogan{
     padding-top: 15vh;
     color: #fff;
+    text-align: center;
 }
 
 #hero-banner .slogan button {
@@ -28,14 +29,13 @@
 /* Company Section */
 
 #company {
-    min-height: 50vh;
+    min-height: 100%;
 }
 
 #company .info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 40px 8%;
-
+    padding: 40px 10%;
 }
 
 #company .info .img{
@@ -54,7 +54,7 @@
 #company .img .company{
     background: url("https://source.unsplash.com/1600x900/?people") 0 0 no-repeat;
     height: 28vh;
-    width: 48vh;
+    width: 30%;
     border-radius: 4px;
     text-align: center;
     color: #fff;
@@ -64,7 +64,7 @@
 #company .img .employee{
     background: url("https://source.unsplash.com/1600x900/?people") 0 0 no-repeat;
     height: 28vh;
-    width: 48vh;
+    width: 30%;
     border-radius: 4px;
     text-align: center;
     color: #fff;
@@ -74,10 +74,11 @@
 #company .img .contact-us{
     background: url("https://source.unsplash.com/1600x900/?people") 0 0 no-repeat;
     height: 28vh;
-    width: 50vh;
+    width: 30%;
     border-radius: 4px;
     text-align: center;
     color: #fff;
+    margin-right: 10px;
 } 
 
 #company .company-info {
@@ -172,8 +173,8 @@
 }
 
 
-
 /* Newsletter Section */
+
 #newsletter{
     text-align: center;
     padding: 20px 0 50px;
@@ -200,6 +201,34 @@
 
 
 @media (max-width: 576px) {
+    /* Hero Banner */
+
+    #hero-banner {
+        min-width: 100vh;
+    }
+
+    /* Company-Info Section */
+    #company .info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5px;
+        width: 100%;
+    }
+
+    #company .info .img {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #company .img .company{
+        width: 100%;
+    }
+    #company .img .employee{
+        width: 100%;
+    }
+    #company .img .contact-us{
+        width: 100%;
+    }
 
 
     /* News Section  */
@@ -233,4 +262,5 @@
         margin-right: 0;
     }
 }
+
 

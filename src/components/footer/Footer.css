@@ -1,6 +1,6 @@
 #footer{
     background-color: black;
-    height: 45vh;
+    height: 100%;
 }
 
 .footer{
@@ -68,3 +68,89 @@
 
 
 
+@media (max-width: 576px) {
+    #footer{
+        width: 100vh;
+    }
+    #footer .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+    }
+
+    #footer .contact h3 {
+        text-align: center;
+    }
+
+    #footer .company-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer .company-name button{
+        position: relative;
+        top: -40px;
+        left: -25px;
+    }
+
+    #footer .menu-links ul{
+        justify-content: space-between;
+        position: relative;
+        left: -35px;
+        top: 10px;
+    }
+
+    #footer .menu-links ul{
+        justify-content: flex-start;
+    }
+
+    #footer .social-media ul {
+        justify-content: flex-start;
+        position: relative;
+        top: -30px;
+        left: -40px;
+    }
+}
+
+/* @media (max-width: 768px){
+    #footer .social-media ul{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+} */
+
+@media (max-width: 992px) {
+
+    .footer{
+        padding: 70px 10%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    
+    #footer .company-name {
+        display: flex;
+    }
+    
+    #footer .contact-info p {
+       font-size: 16px;
+    }
+    #footer .contact-info p span {
+        font-weight: bold;
+    }
+    
+    #footer .company-name .button{
+        position: relative;
+        top: 45px;
+    }
+ 
+    #footer .social-media ul{
+        display: flex;
+        justify-content: center;
+    }
+    
+}

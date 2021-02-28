@@ -5,14 +5,14 @@ const Navbar = () => {
     return (
         <div id="nav">
             <div className="logo">
-                <a href="index.html"><img src="https://www.lianatech.com/media/layout/img/logos/lianatech_logo.svg" alt="logo" /></a>
+                <a href="/"><img src="https://www.lianatech.com/media/layout/img/logos/lianatech_logo.svg" alt="logo" /></a>
             </div>
             <div className="menu">
                 <ul>
                     <li>
-                        <a href="#">Company</a>
-                        <a href="#">Product</a>
-                        <a href="#">Contact Us</a>
+                        <a href="/">Company</a>
+                        <a href="/">Product</a>
+                        <a href="/">Contact Us</a>
                     </li>
                 </ul>
             </div>
