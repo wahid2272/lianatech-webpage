@@ -11,7 +11,7 @@
 }
   
 .navbar a {
-    float: right;
+    float: right; 
     font-size: 14px;
     color: white;
     text-align: center;
@@ -74,7 +74,7 @@
     display: block;
 }
 
-/* Navigation */
+/* Secondary Navigation Section */
 
 #nav {
     display: grid;
@@ -125,6 +125,40 @@
 
 @media (max-width: 576px) {
 
+    /* Header Section */
+    #header {
+        width: 100vh;
+    }
+
     /* Navigation */
-    
+    #nav {
+        width: 100vh;
+    }
+
+    #nav .menu {
+        text-align: right;
+        position: relative;
+        top: -8px;
+        left: 120px;
+    }
+
+    #nav .search-bar form {
+        visibility: hidden;
+    }
 }
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Header Section */
+    /* #header {
+        width: 100vh;
+    } */
+    /* Secondary Navigation Section */
+    /* #nav {
+        width: 100vh;
+    } */
+    #nav .search-bar form input {
+        width: 80px;
+    }
+}
+
+

@@ -1,5 +1,8 @@
 #hero-banner {
-    background: url("https://www.lianatech.com/media/hero-images/cache/marketing-technology-stack-991x9999,q=85.jpg") no-repeat fixed center center/cover;
+    background: url("https://www.lianatech.com/media/hero-images/cache/marketing-technology-stack-991x9999,q=85.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 50vh;
     width: 100%;
     text-align: center;
@@ -208,6 +211,10 @@
     }
 
     /* Company-Info Section */
+    #company {
+        width: 100vh;
+    }
+
     #company .info {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -234,18 +241,25 @@
     /* News Section  */
     #news {
         height: 100%;
+        width: 100vh;
     }
 
     #news .experience{
+        display: flex;
         flex-direction: column;
     }
 
     #news .experience p{
         width: 100%;
+        border: 0.1 solid rgb(156, 156, 156);
     }
 
 
     /* Referance Section */
+
+    #referance {
+        width: 100vh;
+    }
 
     #referance .company-boxes {
         flex-direction: column;
@@ -260,6 +274,11 @@
         width: 100%;
         float: none;
         margin-right: 0;
+    }
+
+    /* News Letter Section */
+    #newsletter {
+        width: 100vh;
     }
 }
 

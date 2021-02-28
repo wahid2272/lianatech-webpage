@@ -12,7 +12,7 @@ const Referance = () => {
             <div className="company-boxes">
                 <div className="box">
                     <div className="logo">
-                        <img src={Bosch}/>
+                        <img src={Bosch} alt="logo"/>
                     </div>
                     <div className="info">
                         <h3>Robert Bosch</h3>
@@ -21,7 +21,7 @@ const Referance = () => {
                 </div>
                 <div className="box">
                     <div className="logo">
-                        <img src={BodyShop} />
+                        <img src={BodyShop} alt="logo" />
                     </div>
                     <div className="info">
                         <h3>The Body Shop</h3>
@@ -30,7 +30,7 @@ const Referance = () => {
                 </div>
                 <div className="box">
                     <div className="logo">
-                        <img src={LaplandHotels} />
+                        <img src={LaplandHotels} alt="logo" />
                     </div>
                     <div className="info">
                         <h3>IKEA</h3>
@@ -39,7 +39,7 @@ const Referance = () => {
                 </div>
                 <div className="box">
                     <div className="logo">
-                        <img src={Ikea} />
+                        <img src={Ikea} alt="logo" />
                     </div>
                     <div className="info">
                         <h3>Lapland Hotels</h3>

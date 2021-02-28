@@ -96,7 +96,7 @@
     #footer .menu-links ul{
         justify-content: space-between;
         position: relative;
-        left: -35px;
+        left: -5px;
         top: 10px;
     }
 
@@ -108,22 +108,11 @@
         justify-content: flex-start;
         position: relative;
         top: -30px;
-        left: -40px;
+        left: 30px;
     }
 }
 
-/* @media (max-width: 768px){
-    #footer .social-media ul{
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .footer {
-        justify-content: center;
-    }
-} */
-
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
 
     .footer{
         padding: 70px 10%;
