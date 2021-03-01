@@ -23,27 +23,27 @@ const CompanyInfo = () => {
                     <div className="fa-icon">
                         <FontAwesomeIcon icon={faBriefcase} />
                     </div>
-                    <div>
-                        <h1>3000</h1>
-                        <p>Clients</p>
+                    <div className="numbers">
+                        <div className="digit">3000</div>
+                        <div>Clients</div>
                     </div>
                 </div>
                 <div className="company-info">
                     <div className="fa-icon">
                         <FontAwesomeIcon icon={faGrin} />
                     </div>
-                     <div>
-                        <h1>1800</h1>
-                        <p>Employees</p>
+                     <div className="numbers">
+                        <div className="digit">1800</div>
+                        <div>Employees</div>
                     </div>
                 </div>
                 <div className="company-info">
                     <div className="fa-icon">
                         <FontAwesomeIcon icon={faGlobeAfrica} />
                     </div>
-                    <div>
-                        <h1>10000</h1>
-                        <p>Daily Users</p>
+                    <div className="numbers">
+                        <div className="digit">10000</div>
+                        <div>Daily Users</div>
                     </div>
                 </div>
             </div>
